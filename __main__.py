@@ -9,8 +9,6 @@ stack_ref_value = "foo"
 stack_ref_update = StackReferenceUpdate(
     name="stackref",
     args=StackReferenceUpdateInputs(
-        stack_name=get_stack(),
-        project_name=get_project(),
         value=stack_ref_value
     ),
     opts=ResourceOptions(

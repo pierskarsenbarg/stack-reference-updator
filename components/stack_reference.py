@@ -4,18 +4,13 @@ import os
 import binascii
 
 class StackReferenceUpdateInputs(object):
-    stack_name: Input[str]
-    project_name: Input[str]
     value: Input[str]
 
     def __init__(
             self,
             value,
-            stack_name,
-            project_name
     ):
-        self.stack_name = stack_name
-        self.project_name = project_name
+        self.value = value
 
 class StackReferenceUpdateProvider(ResourceProvider):
 
